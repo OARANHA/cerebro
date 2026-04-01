@@ -1,0 +1,22 @@
+{
+  "name": "@cerebro/serve",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc && vite build --config vite.config.ts",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@cerebro/core": "workspace:*",
+    "express": "^4.19.0",
+    "cors": "^2.8.5",
+    "ws": "^8.17.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/ws": "^8.5.10",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  }
+}

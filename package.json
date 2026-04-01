@@ -1,0 +1,22 @@
+{
+  "name": "cerebro",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Second brain for Claude Code",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "serve": "node packages/serve/dist/index.js",
+    "remember": "node packages/cli/dist/index.js remember",
+    "gc": "node packages/cli/dist/index.js gc",
+    "dream": "node packages/dream/dist/index.js"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.4.0"
+  }
+}
